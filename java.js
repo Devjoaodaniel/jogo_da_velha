@@ -1,9 +1,16 @@
-let jagador = "x"
-let seletor = document.querySelector('td')
-function jogar(){
-    if (jogador = 'x'){
-        seletor = 
-    }else{
-        
+let jogador = "x"
+function jogar(celula){
+    if(celula.innerHTML ==""){
+        celula.innerHTML = jogador
+
+    if(jogador == "x"){
+            jogador = "o"
+        }else{
+            jogador = "x"
+        }
     }
 }
+function reiniciar(){
+    window.location.reload()
+}
+
