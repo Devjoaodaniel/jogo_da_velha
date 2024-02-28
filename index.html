@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="/java.js"></script>
-    <title>Jogo da velha</title>
 </head>
 <body>
-    <center>
-    <h1>Jogo da Velha</h1>
-        <table class="tabela"><!--criando uma tabela-->
+    <div class="conteiner">
+        <h1>JOGO DA VELHA</h1>
+        <div class="vez">
+            <b id="jogador">x</b>
+        </div>
+        <table id="tabuleiro">
             <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
+                <td onclick="marcar(0)"></td>
+                <td onclick="marcar(1)"></td>
+                <td onclick="marcar(2)"></td>
             </tr>
             <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
+                <td onclick="marcar(3)"></td>
+                <td onclick="marcar(4)"></td>
+                <td onclick="marcar(5)"></td>
             </tr>
             <tr>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
-                <td class="quadrado" onclick="jogar(this)"></td>
+                <td onclick="marcar(6)"></td>
+                <td onclick="marcar(7)"></td>
+                <td onclick="marcar(8)"></td>
             </tr>
         </table>
-        <button class="reinicar" onclick="reiniciar()">Reiniciar</button> 
-    </center> 
+        <button class="inicar"onclick="iniciar()">reiniciar</button>
+    </div>
 </body>
 </html>
